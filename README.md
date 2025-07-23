@@ -87,6 +87,11 @@ All logic is implemented inside the `main()` method for simplicity — no REST e
 3. Navigate to the root directory.
 4. Compile and run using:
 
+```bash
+mvn compile
+mvn exec:java -Dexec.mainClass="com.example.issuetracker.IssueTrackerApplication"
+```
+
 ---
 
 ## 📁 Project Structure
@@ -114,8 +119,3 @@ Directory structure:
 └── com/
 └── day3proj2/
 └── AppTest.java
-
-```bash
-mvn compile
-mvn exec:java -Dexec.mainClass="com.example.issuetracker.IssueTrackerApplication"
-```
