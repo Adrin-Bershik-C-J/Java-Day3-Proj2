@@ -87,35 +87,35 @@ All logic is implemented inside the `main()` method for simplicity — no REST e
 3. Navigate to the root directory.
 4. Compile and run using:
 
-```bash
-mvn compile
-mvn exec:java -Dexec.mainClass="com.example.issuetracker.IssueTrackerApplication"
-
-
 ---
 
 ## 📁 Project Structure
+
 Directory structure:
 └── adrin-bershik-c-j-java-day3-proj2/
-    ├── README.md
-    ├── day3proj2.txt
-    ├── pom.xml
-    └── src/
-        ├── main/
-        │   └── java/
-        │       └── com/
-        │           └── day3proj2/
-        │               ├── App.java
-        │               ├── IssueTrackerApplication.java
-        │               ├── interfaces/
-        │               │   └── Reportable.java
-        │               └── models/
-        │                   ├── Bug.java
-        │                   ├── Issue.java
-        │                   └── Task.java
-        └── test/
-            └── java/
-                └── com/
-                    └── day3proj2/
-                        └── AppTest.java
+├── README.md
+├── day3proj2.txt
+├── pom.xml
+└── src/
+├── main/
+│ └── java/
+│ └── com/
+│ └── day3proj2/
+│ ├── App.java
+│ ├── IssueTrackerApplication.java
+│ ├── interfaces/
+│ │ └── Reportable.java
+│ └── models/
+│ ├── Bug.java
+│ ├── Issue.java
+│ └── Task.java
+└── test/
+└── java/
+└── com/
+└── day3proj2/
+└── AppTest.java
+
+```bash
+mvn compile
+mvn exec:java -Dexec.mainClass="com.example.issuetracker.IssueTrackerApplication"
 ```
