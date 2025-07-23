@@ -8,26 +8,27 @@ This is a simple **Java console application** built with **Spring Boot structure
 
 Simulate a basic Issue Tracker that handles different types of issues like **bugs** and **tasks**, showcasing:
 
-- 🔁 Inheritance and Method Overriding  
-- 🧩 Interface-based design  
+- 🔁 Inheritance and Method Overriding
+- 🧩 Interface-based design
 - 🧠 Runtime polymorphism — without using `instanceof`
 
 All logic is implemented inside the `main()` method for simplicity — no REST endpoints or Spring Boot MVC used.
 
 ---
 
-
 ---
 
 ## 📦 Class & File Breakdown
 
 ### 🔹 `Reportable.java`
+
 - An **interface** that declares a method `reportStatus()`.
 - Enforces that every issue (e.g., Bug, Task) must define how its status is reported.
 
 ---
 
 ### 🔹 `Issue.java`
+
 - An **abstract base class** that represents a general issue.
 - Implements the `Reportable` interface.
 - Declares:
@@ -38,6 +39,7 @@ All logic is implemented inside the `main()` method for simplicity — no REST e
 ---
 
 ### 🔹 `Bug.java`
+
 - Extends `Issue`, representing a software bug.
 - Has an additional field: `severity`
 - Overrides:
@@ -47,6 +49,7 @@ All logic is implemented inside the `main()` method for simplicity — no REST e
 ---
 
 ### 🔹 `Task.java`
+
 - Extends `Issue`, representing an assignable task.
 - Has an additional field: `assignee`
 - Overrides:
@@ -56,6 +59,7 @@ All logic is implemented inside the `main()` method for simplicity — no REST e
 ---
 
 ### 🔹 `IssueTrackerApplication.java`
+
 - The main entry point of the application.
 - Inside `main()`:
   - Creates a list of `Issue` objects (both `Bug` and `Task`)
@@ -67,7 +71,7 @@ All logic is implemented inside the `main()` method for simplicity — no REST e
 ## ✅ Features Demonstrated
 
 | Concept                  | Implementation Example                            |
-|--------------------------|----------------------------------------------------|
+| ------------------------ | ------------------------------------------------- |
 | Inheritance              | `Bug` and `Task` extend `Issue`                   |
 | Interface Implementation | `Issue` implements `Reportable`                   |
 | Method Overriding        | `display()` and `reportStatus()` in each subclass |
@@ -87,3 +91,31 @@ All logic is implemented inside the `main()` method for simplicity — no REST e
 mvn compile
 mvn exec:java -Dexec.mainClass="com.example.issuetracker.IssueTrackerApplication"
 
+
+---
+
+## 📁 Project Structure
+Directory structure:
+└── adrin-bershik-c-j-java-day3-proj2/
+    ├── README.md
+    ├── day3proj2.txt
+    ├── pom.xml
+    └── src/
+        ├── main/
+        │   └── java/
+        │       └── com/
+        │           └── day3proj2/
+        │               ├── App.java
+        │               ├── IssueTrackerApplication.java
+        │               ├── interfaces/
+        │               │   └── Reportable.java
+        │               └── models/
+        │                   ├── Bug.java
+        │                   ├── Issue.java
+        │                   └── Task.java
+        └── test/
+            └── java/
+                └── com/
+                    └── day3proj2/
+                        └── AppTest.java
+```

@@ -1,3 +1,30 @@
+Project Structure
+
+Directory structure:
+└── adrin-bershik-c-j-java-day3-proj2/
+    ├── README.md
+    ├── day3proj2.txt
+    ├── pom.xml
+    └── src/
+        ├── main/
+        │   └── java/
+        │       └── com/
+        │           └── day3proj2/
+        │               ├── App.java
+        │               ├── IssueTrackerApplication.java
+        │               ├── interfaces/
+        │               │   └── Reportable.java
+        │               └── models/
+        │                   ├── Bug.java
+        │                   ├── Issue.java
+        │                   └── Task.java
+        └── test/
+            └── java/
+                └── com/
+                    └── day3proj2/
+                        └── AppTest.java
+
+
 IssueTrackerApplication.java
 
 package com.day3proj2;
